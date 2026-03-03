@@ -1,0 +1,24 @@
+/* 반응형조건 responsive */
+/* m(320~) -> t(1024~) -> d(1250~) */
+@media screen and (min-width:860px) {
+    #wrap .intro {padding: 300px 0 100px;}
+}
+@media screen and (min-width:1024px) {
+    #wrap .intro {padding: 410px 0 100px;}
+    #wrap .intro .logo {width: 32px;left: 36px; top:30px;}
+    #wrap .intro h1 {margin: 0 0 100px;}
+    #wrap .intro h1 span {font-size: 3.13rem; font-weight: 600;}
+    #wrap .container .sponsor_btn {width: 238px; height: 60px;}
+    #wrap .container .sponsor_btn em {font-size: 1.38rem;}
+    #wrap .container .sponsor_btn::after {font-size: 1rem;}
+}/* 1024~1249 */
+@media screen and (min-width:1250px) {
+    #wrap .intro {padding: 447px 0 100px;}
+    #wrap .intro .logo {width: 42px; left: 61px; top:53px;}
+    #wrap .intro h1 span {font-size: 4.38rem; line-height: 1.2;}
+    #wrap .intro h1 span:nth-child(1) {font-weight: 400;}
+    #wrap .intro h1 span:nth-child(2) {font-weight: 700;}
+    #wrap .container .sponsor_btn {width: 409px; height: 71px;}
+    #wrap .container .sponsor_btn em {font-size: 2.13rem;}
+    #wrap .container .sponsor_btn::after {font-size: 2rem;}
+}/* 1250~max */
