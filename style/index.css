@@ -41,3 +41,70 @@
     0% {transform: translateX(0);}
     100% {transform: translateX(5px);}
 }
+/* ======================================================================2행 퀴즈 */
+#wrap .quiz_bg {
+    background-image: url(../image/quiz_bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 70px;
+}
+#wrap .quiz_bg .quiz {
+    display: flex;
+    flex-flow: column nowrap;/* t,d column -> row */
+    gap:50px;
+}
+#wrap .quiz_bg .quiz .quiz_list > * {margin: 0 0 16px;}
+#wrap .quiz_bg .quiz .quiz_list {}
+#wrap .quiz_bg .quiz .quiz_list h1 {
+    font-size: 1.5rem; line-height: 1.2;
+    letter-spacing: -0.01rem; font-weight: 500;
+    font-size: 'notosans KR', sanserif; /* 단독글꼴일경우 */
+    color: #fff;
+}
+#wrap .quiz_bg .quiz .quiz_list h2 {}
+#wrap .quiz_bg .quiz .quiz_list h2 span {
+    color: #fff; display: block; line-height: 1.7;
+}
+#wrap .quiz_bg .quiz .quiz_list h2 span:nth-child(1) {}
+#wrap .quiz_bg .quiz .quiz_list h2 span:nth-child(2) {}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm {margin: 0;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul {margin: 0 0 16px;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li {margin: 0 0 16px;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li:hover label {color: #FF7300;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li:last-child {margin: 0;}
+/*
+radio, checkbox, select, option은 디자인 변경 불가!
+radio 체크박스 디자인 변경하는 방법 -> background-image
+1.`label {background-image}`로 off 이미지 설정
+    * size, no-repeat, padding 설정
+2. `input:chacked + label{background-image}` on 이미지 설정
+    *  input이 체크 되었을 때(:chacked) 형제 label의 배경이미지가 변경 된다.
+3. `input {display:none;}` radio의 기본 체크 박스를 숨김처리
+ */
+
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li input {display: none;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li input:checked + label{
+    background-image: url(../image/chk_on.svg)
+}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li label {
+    color: #fff; font-size: 0.88rem;
+    background-image: url(../image/chk_off.svg);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    padding-left: 47.75px;
+}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm #answer_btn {
+    width: 100%; line-height: 1.7;
+    border-radius: 50px; padding: 10px;
+    background-color: #050505; color: #fff;
+    transition: background-color 0.3s, font-weight 0.3s;
+}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm #answer_btn:hover {background-color: #FF7300; font-weight: 600;}
+#wrap .quiz_bg .quiz .quiz_status {
+    display: flex; flex-flow: column nowrap;
+    align-items: flex-end; gap: 20px;
+}
+#wrap .quiz_bg .quiz .quiz_status img {width: 100%;}
+#wrap .quiz_bg .quiz .quiz_status p {
+    font-size: 1.25rem; color: #fff; line-height: 1.7;
+}

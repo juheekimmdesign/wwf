@@ -1,8 +1,9 @@
 /* 공통 common.css */
 #wrap {}
-#wrap * {transition: all 0.3s;}
+#wrap * {transition: all 0.3s;}/* 반응형 크기 조절 할 때 부드럽게 조절 됨 */
 #wrap .container {min-width: 320px;}
 /* mobile design - .sponsor_btn */
+#wrap .container .contents {max-width: 1250px; margin: 0 auto;}
 #wrap .container .sponsor_btn {
     width: 164px; height: 41px;
     background: linear-gradient(90deg, #FE9300, #FF7300);

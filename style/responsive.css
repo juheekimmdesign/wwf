@@ -1,7 +1,28 @@
 /* 반응형조건 responsive */
 /* m(320~) -> t(1024~) -> d(1250~) */
+@media screen and (min-width:580px) {
+    #wrap .quiz_bg .quiz {
+        flex-flow: row nowrap;/* t,d column -> row */
+    }
+    /* --------------------------------------------2행 퀴즈 */
+    #wrap .quiz_bg .quiz .quiz_list {width: 220px;}
+    #wrap .quiz_bg .quiz .quiz_status {flex:1;}
+}
 @media screen and (min-width:860px) {
     #wrap .intro {padding: 300px 0 100px;}
+    /* --------------------------------------------2행 퀴즈 */
+    #wrap .quiz_bg {padding: 150px 80px;}
+    #wrap .quiz_bg .quiz .quiz_list {width: 360px;}
+    #wrap .quiz_bg .quiz .quiz_list h1 {font-size: 2.5rem;}
+    #wrap .quiz_bg .quiz .quiz_list h2 span {display: inline-block; font-size: 1.25rem;}
+    #wrap .quiz_bg .quiz .quiz_list h2 span:nth-child(1) {margin-right: 6px;}
+    #wrap .quiz_bg .quiz .quiz_list #quiz_frm ul {margin: 0 0 38px;}
+    #wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li {margin: 0 0 38px;}
+    #wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li label {
+        font-size: 1.25rem; background-size: 28px; display: block;
+        padding-left: 48px; line-height: 1.4;
+    }
+    #wrap .quiz_bg .quiz .quiz_list #quiz_frm #answer_btn { font-size: 1.25rem;}
 }
 @media screen and (min-width:1024px) {
     #wrap .intro {padding: 410px 0 100px;}
@@ -11,6 +32,8 @@
     #wrap .container .sponsor_btn {width: 238px; height: 60px;}
     #wrap .container .sponsor_btn em {font-size: 1.38rem;}
     #wrap .container .sponsor_btn::after {font-size: 1rem;}
+    /* --------------------------------------------2행 퀴즈 */
+    #wrap .quiz_bg .quiz .quiz_list {width: 500px;}
 }/* 1024~1249 */
 @media screen and (min-width:1250px) {
     #wrap .intro {padding: 447px 0 100px;}
@@ -21,4 +44,6 @@
     #wrap .container .sponsor_btn {width: 409px; height: 71px;}
     #wrap .container .sponsor_btn em {font-size: 2.13rem;}
     #wrap .container .sponsor_btn::after {font-size: 2rem;}
+    /* --------------------------------------------2행 퀴즈 */
+    #wrap .quiz_bg .quiz .quiz_list {width: 600px;}
 }/* 1250~max */

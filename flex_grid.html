@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>flex_grid 비교연습용</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        /* 내부스타일시트 작성위치 */
+        /* 공통 */
+        .contents {
+            width: 400px; margin: 30px auto;
+            border: 2px solid black;
+        }
+        .contents img {width: 100%;}
+        .contents .quiz{background-color: yellow;}
+        .contents .info{background-color: pink;}
+        /* flex */
+        .flex {
+            display: flex;/* quiz + info 정렬위한준비 */
+            gap: 10px;
+        }
+        .flex .quiz {
+            flex:1; /* width: 50%; */
+            display: flex;/* h2+ol+btn 정렬위한준비 */
+            flex-flow: row wrap;
+        }
+        .flex .quiz > * {width: 50%;}
+        .flex .quiz h2 {background-color: royalblue; }
+        .flex .quiz ol {background-color: aqua; height: calc(100% - 50px);}
+        .flex .quiz #btn {background-color: chartreuse; height: 50px;}
+        .flex .info {flex:1; /* width: 50%; */}
+        /* grid */
+        .grid {
+            display: grid;/* quiz + info 정렬위한준비 */
+            grid-template-columns: 1fr 1fr;
+            /* grid-template-rows: 100px 200px; */
+            gap: 10px;
+        }
+        .grid .quiz {
+            display: grid;/* h2+ol+btn 정렬위한 부모명령 */
+            /* grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 50px; */
+            grid-template-areas: 
+                'title btn'
+                'list btn';
+            grid-template-columns: 1fr 60px;
+            grid-template-rows: 30px 1fr;
+        }
+        .grid .quiz h2 {grid-area: title; background-color: royalblue;}
+        .grid .quiz ol {grid-area: list; background-color: aqua;}
+        .grid .quiz #btn {grid-area: btn; background-color: chartreuse;}
+        .grid .info {}
+        /* 
+        정렬 자식이 2개 이상이고 한 방향(수평, 수직)으로만 정렬 -> felx, grid 
+        정렬 자식이 3개 이상이고 반응형 기기에 따라 재배열 자유 -> gird
+        */
+    </style>
+</head>
+<body>
+    <div class="contents flex">
+        <div class="quiz">
+            <h2>퀴즈제목</h2>
+            <ol>
+                <li>30</li>
+                <li>40</li>
+                <li>50</li>
+            </ol>
+            <button type="button" id="btn">제출</button>
+        </div>
+        <div class="info">
+            <img src="./image/quiz_contents.png" alt="">
+            <p>업데이트</p>
+        </div>
+    </div>
+    <div class="contents grid">
+        <div class="quiz">
+            <h2>퀴즈제목</h2>
+            <ol>
+                <li>30</li>
+                <li>40</li>
+                <li>50</li>
+            </ol>
+            <button type="button" id="btn">제출</button>
+        </div>
+        <div class="info">
+            <img src="./image/quiz_contents.png" alt="">
+            <p>업데이트</p>
+        </div>
+    </div>
+</body>
+</html>
