@@ -44,8 +44,6 @@
 /* ======================================================================2행 퀴즈 */
 #wrap .quiz_bg {
     background-image: url(../image/quiz_bg.png);
-    background-size: cover;
-    background-position: center;
     padding: 70px;
 }
 #wrap .quiz_bg .quiz {
@@ -108,3 +106,121 @@ radio 체크박스 디자인 변경하는 방법 -> background-image
 #wrap .quiz_bg .quiz .quiz_status p {
     font-size: 1.25rem; color: #fff; line-height: 1.7;
 }
+/* ====================================================================================3.동영상 */
+#wrap .video_bg {
+    background-image: url(../image/video_bg.png);
+    padding: 50px 15px;
+}
+#wrap .video_bg .video {}
+#wrap .video_bg .video h1 {text-align: center; }
+#wrap .video_bg .video iframe {width: 100%; margin: 0 0 40px;}
+/* ====================================================================================4.50감소 */
+#wrap .reduction_bg {
+    background-image: url(../image/reduction_50_bg.png);
+}
+#wrap .reduction_bg .reduction {}
+#wrap .reduction_bg .reduction h1 {color: #fff;}
+#wrap .reduction_bg .reduction h1+p {color: #fff;}
+#wrap .reduction_bg .reduction p img {width: 100%;}
+/* ====================================================================================5.인류재앙*/
+#wrap .humanity_bg {
+    background-color: #F5F5F5;
+}
+#wrap .humanity_bg .humanity h1 {text-align: center;}
+#wrap .humanity_bg .humanity h1+p {text-align: center;}
+#wrap .humanity_bg .humanity .list {
+    display: flex; flex-flow: column nowrap; gap: 20px;
+    /* display: grid; grid-row: 1fr 1fr 1fr; */
+}
+#wrap .humanity_bg .humanity .list li {}
+#wrap .humanity_bg .humanity .list li dl {
+    padding: 48px 0;
+    background-size: cover; background-position: center;
+    text-align: center; position: relative;
+}
+#wrap .humanity_bg .humanity .list li dl * {color: #fff; position: relative; z-index: 10}
+#wrap .humanity_bg .humanity .list li:nth-child(1) dl {background-image: url(../image/warmming_28t.png);}
+#wrap .humanity_bg .humanity .list li:nth-child(2) dl {background-image: url(../image/warmming_27cm.png);}
+#wrap .humanity_bg .humanity .list li:nth-child(3) dl {background-image: url(../image/wwf.jpg);}
+#wrap .humanity_bg .humanity .list li dl::before {
+    content: ''; display: block;
+    left: 0; top:0; z-index: 9;
+    width: 100%; height: 100%;
+    position: absolute;
+    background: linear-gradient(#000 19%, transparent 55%);
+}
+#wrap .humanity_bg .humanity .list li dl dt {
+    font-size: 1.38rem; font-weight: 500; line-height: 1.2; margin: 0 0 12px;
+}
+#wrap .humanity_bg .humanity .list li dl dd {line-height: 1.7;}
+#wrap .humanity_bg .humanity .list li .txt {
+    background-color: #fff; padding: 20px;
+}
+#wrap .humanity_bg .humanity .list li .txt p {text-align: center; font-size: 0.81rem; line-height: 1.7;}
+/* ====================================================================================6.빙하위기 */
+#wrap .crisis_bg {
+    background-image: url(../image/reduction_50_bg.png);
+}
+#wrap .crisis_bg .crisis {}
+#wrap .crisis_bg .crisis h1 {color: #fff;}
+#wrap .crisis_bg .crisis h1+p {color: #fff;}
+#wrap .crisis_bg .crisis p img {width: 100%;}
+/* ====================================================================================7.WWF단체소개 */
+#wrap .wwf_bg {
+    background-image: url(../image/wwf.jpg);
+    background-size: 200%;
+    position: relative;
+}
+#wrap .wwf_bg::before {
+    content: ''; display: block;
+    width: 100%; height: 100%;
+    top: 0; left: 0; 
+    position:absolute; z-index: 20;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+#wrap .wwf_bg .wwf {position: relative; z-index: 21; text-align: center;}
+#wrap .wwf_bg .wwf h1 {font-size: 1.88rem; font-weight: 700; line-height: 1.3;}
+#wrap .wwf_bg .wwf p{
+    font-size: 0.81rem; line-height: 1.7;
+    font-weight: 500; margin: 0 0 22px;
+}
+/* ====================================================================================8.활동내역 */
+#wrap .activity_bg {}
+#wrap .activity_bg .activity {}
+#wrap .activity_bg .activity h1 {text-align: center;}
+#wrap .activity_bg .activity .details {
+    display: grid; 
+    grid-template-areas:
+        'public'
+        'corporation'
+        'nature';
+        gap: 22px;
+}
+#wrap .activity_bg .activity .details li {
+    padding-top: 94px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#wrap .activity_bg .activity .details li:nth-child(1) {
+    grid-area: public;/* 대중-grid 2차원 정렬을 위한 자식 이름 짓기 */
+    background-image: url(../image/warmming_28t.png);
+    background-position: center;
+}
+#wrap .activity_bg .activity .details li:nth-child(2) {
+    grid-area: corporation;/* 기업 */
+    background-image: url(../image/wwf.jpg);
+    background-size: 110%;
+    background-position: center;
+}
+#wrap .activity_bg .activity .details li:nth-child(3) {
+    grid-area: nature;/* 자연 */
+    background-image: url(../image/reduction_50.png);
+}
+#wrap .activity_bg .activity .details li .txt {
+    padding: 20px; background-color: rgba(0,0,0,0.7);
+}
+#wrap .activity_bg .activity .details li .txt > * {color: #fff;}
+#wrap .activity_bg .activity .details li .txt dt {font-size: 1.38rem; font-weight: 500; line-height: 1.2; margin: 0 0 18px;}
+#wrap .activity_bg .activity .details li .txt dd {font-size: 0.81rem; line-height: 1.7;}
+/* ====================================================================================9.선물정보 */
+/* ====================================================================================10.안내 */
