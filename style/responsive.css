@@ -72,6 +72,7 @@
     #wrap .container .sponsor_btn::after {font-size: 1rem;}
     /* --------------------------------------------2행 퀴즈 */
     #wrap .quiz_bg .quiz .quiz_list {width: 500px;}
+    /* -------------------------------------------------7행 */
     /* --------------------------------------------8행 */
     #wrap .activity_bg .activity .details {
         grid-template-areas:
