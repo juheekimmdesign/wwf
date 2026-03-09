@@ -223,4 +223,46 @@ radio 체크박스 디자인 변경하는 방법 -> background-image
 #wrap .activity_bg .activity .details li .txt dt {font-size: 1.38rem; font-weight: 500; line-height: 1.2; margin: 0 0 18px;}
 #wrap .activity_bg .activity .details li .txt dd {font-size: 0.81rem; line-height: 1.7;}
 /* ====================================================================================9.선물정보 */
+#wrap .gift_bg {
+    background-image: url(../image/reduction_50_bg.png);
+}
+#wrap .gift_bg .gift {text-align: center;}
+#wrap .gift_bg .gift .title {
+    display: flex; flex-flow: column nowrap;
+}
+#wrap .gift_bg .gift .title h1 {text-align: left; color: #fff;}
+#wrap .gift_bg .gift .title .sponsor_btn {margin: 0;}
+#wrap .gift_bg .gift .title .sponsor_btn em {}
+#wrap .gift_bg .gift .gift_list {
+    display: grid; gap: 20px;
+    grid-template-areas:
+        'sponsor2'
+        'sponsor3'
+        'sponsor5'
+    ;
+    margin-bottom: 40px;
+}
+#wrap .gift_bg .gift .gift_list li {}
+#wrap .gift_bg .gift .gift_list li:nth-child(1) {grid-area: sponsor2;}
+#wrap .gift_bg .gift .gift_list li:nth-child(2) {grid-area: sponsor3;}
+#wrap .gift_bg .gift .gift_list li:nth-child(3) {grid-area: sponsor5;}
+#wrap .gift_bg .gift .gift_list li:nth-child(2) .photo {background-image: url(../image/freebie2.jpg); grid-area: sponsor3;}
+#wrap .gift_bg .gift .gift_list li:nth-child(3) .photo {background-image: url(../image/freebie3.jpg); grid-area: sponsor5;}
+#wrap .gift_bg .gift .gift_list li .photo {
+    height: 150px; overflow: hidden;
+    background-size: cover; background-position: center;
+}
+#wrap .gift_bg .gift .gift_list li .photo img {width: 100%; transform: translateY(-100px);}
+#wrap .gift_bg .gift .gift_list li h2,
+#wrap .gift_bg .gift .gift_list li h2+p {color: #fff;}
+#wrap .gift_bg .gift .gift_list li h2 {margin-top: 13px;}
+#wrap .gift_bg .gift .gift_list li h2+p {line-height: 1.7; font-size: 1rem;}
+#wrap .gift_bg .gift .info {
+    background-color: #fff; color: #050505;
+    display: inline-block;
+}
 /* ====================================================================================10.안내 */
+#wrap .payment_bg {background-color: #E4E5EA;}
+#wrap .payment_bg .payment {}
+#wrap .payment_bg .payment h1 {margin: 0;}
+#wrap .payment_bg .payment h1+p {font-size: 1rem;}
