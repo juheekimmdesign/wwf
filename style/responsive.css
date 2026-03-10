@@ -26,7 +26,8 @@
     /* ----------------------------------------------------------------------------------3~6행공통 */
     #wrap .container {padding: 200px 80px;}
     #wrap .container .contents h1 {font-size: 2.5rem; margin: 0 0 40px;}
-    #wrap .container .contents h1+p {font-size: 1.38rem;}
+    #wrap .container .contents h1+p,
+    #wrap .container .contents p {font-size: 1.38rem;}
     /* ----------------------------------------------------------------------------------3행 */
     #wrap .container .contents h1 {margin: 0 0 70px;}
     #wrap .video_bg .video iframe {height: 484px;}
@@ -123,7 +124,8 @@
     #wrap .quiz_bg .quiz .quiz_list {width: 600px;}
      /* ----------------------------------------------------------------------------------3~6행공통 */
     #wrap .container .contents h1 {font-size: 3.44rem; margin: 0 0 70px;}
-    #wrap .container .contents h1+p {font-size: 2.13rem; margin: 0 0 70px;}
+    #wrap .container .contents h1+p,
+    #wrap .container .contents p {font-size: 2.13rem; margin: 0 0 70px;}
     /* ----------------------------------------------------------------------------------3행 */
     #wrap .video_bg .video iframe {height: 600px;}
 }/* 1250~max */

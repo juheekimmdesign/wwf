@@ -17,7 +17,8 @@
     background-color: #fff;
     color: #050505; font-weight: 500;
 }
-#wrap .container .contents h1+p {
+#wrap .container .contents h1+p,
+#wrap .container .contents p {
     font-size: 0.81rem; line-height: 1.7;
     font-weight: 500;
     margin: 0 0 22px;

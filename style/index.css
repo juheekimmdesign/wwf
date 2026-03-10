@@ -180,7 +180,7 @@ radio 체크박스 디자인 변경하는 방법 -> background-image
 }
 #wrap .wwf_bg .wwf {position: relative; z-index: 21; text-align: center;}
 #wrap .wwf_bg .wwf h1 {font-size: 1.88rem; font-weight: 700; line-height: 1.3;}
-#wrap .wwf_bg .wwf p{
+#wrap .wwf_bg .wwf h1+p{
     font-size: 0.81rem; line-height: 1.7;
     font-weight: 500; margin: 0 0 22px;
 }
