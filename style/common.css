@@ -1,3 +1,9 @@
+/* 
+ * GitHub Repository Phishing Alert Appeal & Project Verification
+이 페이지는 깃허브에서 발생한 피싱 경고 오탐지(False Positive)를 해명하고, 해당 코드가 순수한 학습 및 포트폴리오용임을 증명하기 위해 작성되었습니다.
+This CSS is part of a student project. 
+Any resemblance to real-world commercial sites is purely for design practice.
+*/
 /* 공통 common.css */
 #wrap {}
 #wrap * {transition: all 0.3s;}/* 반응형 크기 조절 할 때 부드럽게 조절 됨 */

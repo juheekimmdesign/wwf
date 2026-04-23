@@ -1,3 +1,6 @@
+**"This is a portfolio project for educational purposes."**
+* 이것은 교육 목적의 포트폴리오 프로젝트입니다.
+
 # WWF 북금곰 보호 캠페인 랜딩페이지
 * 모바일 ~ 데스크탑까지 반응형 설계작업
 * 26/03/03 `index.html` 1행 완성(반응형o)
